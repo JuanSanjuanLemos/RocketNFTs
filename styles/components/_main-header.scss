@@ -1,0 +1,46 @@
+@use '../colors/colors' as c;
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 5.7rem auto 9rem;
+    max-width: 1300px;
+    span,p{
+        display: inline;
+        font-size: 4rem;
+        line-height: 4.9rem;
+        font-weight: 700;
+    }
+    nav{
+        width: 30%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            
+            li,a{
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: c.$primary-color;
+                :hover{
+                    color: #7a7a7a;
+                }
+            }
+        }
+    }
+    .button-conect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        border: none;
+        width: 23rem;
+        height: 5rem;
+        p{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            font-weight: 700;
+        }
+    }
+}
