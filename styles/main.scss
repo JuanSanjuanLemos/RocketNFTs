@@ -1,3 +1,7 @@
 @use './reset';
 @use './colors/colors';
+@use './components/main-about';
 @use './components/main-header';
+@use './components/main-section';
+@use './components/wrapper-artists';
+@use './components/wrapper-avatars';

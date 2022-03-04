@@ -1,0 +1,18 @@
+@use '../colors/colors' as c;
+
+.wrapper-artists{
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    span{
+        position: relative;
+        font-size: 1.8rem;
+        color: c.$primary-color;
+        &::before{
+            content: "+10";
+            font-weight: 700;
+            position: absolute;
+            top: -2rem;
+        }
+    }
+}

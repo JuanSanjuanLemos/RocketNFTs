@@ -1,12 +1,12 @@
 @use '../colors/colors' as c;
-
+@use '../mixins/mixin' as m;
 .main-header{
+    @include m.container;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin: 5.7rem auto 9rem;
-    max-width: 1300px;
+    margin-top: 5.5rem;
+    margin-bottom: 9rem;
     span,p{
         display: inline;
         font-size: 4rem;
