@@ -68,8 +68,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
   gap: 4rem;
-  width: 350px;
+  max-width: 350px;
   height: 150px;
   background-color: #252525;
 }
@@ -87,6 +88,14 @@ html {
 }
 .artist-card .-amount {
   color: #FF5B50;
+}
+@media (max-width: 576px) {
+  .artist-card {
+    width: 300px;
+  }
+  .artist-card h2 {
+    font-size: 1.7rem;
+  }
 }
 
 .bests-section {

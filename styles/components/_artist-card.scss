@@ -1,10 +1,12 @@
 @use '../colors/colors' as c;
+@use '../mixins/mixin' as m;
 .artist-card{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     gap: 4rem;
-    width: 350px;
+    max-width: 350px;
     height: 150px;
     background-color: #252525;
     h2{
@@ -22,5 +24,11 @@
     }
     .-amount{
         color: c.$secondary-color;
+    }
+    @include m.sm{
+        width: 300px;
+        h2{
+            font-size: 1.7rem;
+        }
     }
 }
