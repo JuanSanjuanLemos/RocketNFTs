@@ -44,7 +44,7 @@
                     .input-email{
                         background-color: #000;
                         height: 6.6rem;
-                        width: 28rem;
+                        max-width: 28rem;
                         border: none;
                         font-size: 2rem;
                         text-align: center;
@@ -54,7 +54,7 @@
                         }
                     }
                     .button-submit{
-                        width: 12.2rem;
+                        max-width: 12.2rem;
                         height: 6.6rem;
                         font-weight: 700;
                         font-size: 2rem;
@@ -104,6 +104,62 @@
                 gap: 5rem;
                 img{
                     cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@include m.lg{
+    .main-footer{
+        .container{
+            .middle-footer{
+                .wrapper-newsletter{
+                    width: auto;
+                    margin-right: 20px;
+                }
+                .wrapper-links{
+                    width: auto;
+                    margin-left: 3rem;
+                    padding: 3rem 0;
+                    flex-direction: column;
+                    gap: 3rem;
+                }
+            }
+            .bottom-footer{
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+    }
+}
+@include m.sm{
+    .main-footer{
+        .container{
+            .middle-footer{
+                flex-direction: column;
+                .wrapper-newsletter{
+                    border: none;
+                    border-bottom: 1px solid c.$tertiary-color;
+                    padding: 0;
+                    padding-bottom: 1rem;
+                    margin: 2rem auto;
+                    .input-email{
+                        width: 16rem;
+                        &::placeholder{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .button-submit{
+                        width: 7rem;
+                        font-size: 1.6rem;
+                    }
+                }
+                .wrapper-links{
+                    flex-direction: row;
+                    margin: 0;
+                    padding: 0;
+                    gap: 0;
+                    justify-content: space-between;
                 }
             }
         }
