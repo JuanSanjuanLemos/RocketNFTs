@@ -1,0 +1,108 @@
+@use '../colors/colors' as c;
+@use '../mixins/mixin' as m;
+.main-footer{
+    background-color: #252525;
+    .container{
+        @include m.container;
+        padding-top: 8rem;
+        .top-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 6rem;
+            border-bottom: 1px solid c.$tertiary-color;
+            h1{
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            .wrapper-arrow{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                height: 80px;
+                background-color: c.$secondary-color;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .middle-footer{
+            display: flex;           
+            border-bottom: 1px solid c.$tertiary-color;
+            .wrapper-newsletter{
+                width: 30%;
+                border-right: 1px solid c.$tertiary-color;
+                padding: 6.7rem 6rem 6.2rem 0;
+                h2{
+                    font-size: 3rem;
+                    color: c.$primary-color;
+                }
+                div{
+                    margin-top: 2.5rem;
+                    display: flex;
+                    .input-email{
+                        background-color: #000;
+                        height: 6.6rem;
+                        width: 28rem;
+                        border: none;
+                        font-size: 2rem;
+                        text-align: center;
+                        font-weight: 400;
+                    }
+                    .button-submit{
+                        width: 12.2rem;
+                        height: 6.6rem;
+                        font-weight: 700;
+                        font-size: 2rem;
+                        border: none;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .wrapper-links{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 70%;
+                dl{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.7rem;
+                    font-size: 2rem;
+                    dt{
+                        font-weight: 700;
+                        color: c.$primary-color;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: c.$tertiary-color;
+                        &:hover{
+                            color: c.$primary-color;
+                        }
+                    }
+                }
+            }
+        }
+        .bottom-footer{
+            margin-top: 8rem;
+            padding-bottom: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                font-size: 2rem;
+                color: c.$tertiary-color;
+            }
+            div{
+                display: flex;
+                gap: 5rem;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
