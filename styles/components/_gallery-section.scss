@@ -1,0 +1,14 @@
+@use '../mixins/mixin' as m;
+.gallery-section{
+    @include m.container;
+    display: grid;
+    gap: 1.6rem;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px,290px));
+    overflow: hidden;
+    .item{
+        width: 100%;
+    }
+}

@@ -42,5 +42,10 @@
             line-height: 2rem;
             font-weight: 700;
         }
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: 100ms;
+        }
     }
 }
