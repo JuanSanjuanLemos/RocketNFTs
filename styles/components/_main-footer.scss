@@ -49,6 +49,9 @@
                         font-size: 2rem;
                         text-align: center;
                         font-weight: 400;
+                        &::placeholder{
+                            color: c.$tertiary-color;
+                        }
                     }
                     .button-submit{
                         width: 12.2rem;
