@@ -18,10 +18,24 @@
             .wrapper-texts{
                 display: flex;
                 justify-content: space-evenly;
+                gap: 3rem;
+                margin: 0 3rem;
+                p{
+                    display: block;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 10;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
             img{
                 width: 100%;
             }
+            @include m.md{
+                   width: 80%; 
+            }
         }
     }
 }
+

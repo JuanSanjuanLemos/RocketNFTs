@@ -1,4 +1,5 @@
 @use '../colors/colors' as c;
+@use '../mixins/mixin' as m;
 .main-text{
     color: c.$primary-color;
     font-size: 1.8rem;
@@ -8,5 +9,8 @@
     }
     p{
         margin-bottom: 6.3rem;
+    }
+    @include m.sm{
+        font-size: 1.5rem;
     }
 }

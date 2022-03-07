@@ -459,6 +459,11 @@ body {
 .main-text p {
   margin-bottom: 6.3rem;
 }
+@media (max-width: 576px) {
+  .main-text {
+    font-size: 1.5rem;
+  }
+}
 
 .metrics-section {
   border-bottom: 1px solid #5a5757;
@@ -483,9 +488,24 @@ body {
 .metrics-section .container .texts-and-banner .wrapper-texts {
   display: flex;
   justify-content: space-evenly;
+  gap: 3rem;
+  margin: 0 3rem;
+}
+.metrics-section .container .texts-and-banner .wrapper-texts p {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .metrics-section .container .texts-and-banner img {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .metrics-section .container .texts-and-banner {
+    width: 80%;
+  }
 }
 
 .nft-card {
@@ -614,4 +634,10 @@ body {
   color: #fff;
   font-weight: 600;
   font-size: 5rem;
+}
+@media (max-width: 576px) {
+  .wrapper-metrics h2 p {
+    font-size: 3rem;
+    width: 15%;
+  }
 }/*# sourceMappingURL=main.css.map */
