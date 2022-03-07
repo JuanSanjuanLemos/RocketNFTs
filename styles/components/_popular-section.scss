@@ -23,3 +23,11 @@
         }
     }
 }
+
+@include m.lg{
+    .wrapper-lists{
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+    }
+}
