@@ -1,0 +1,24 @@
+@use '../mixins/mixin' as m;
+@use '../colors/colors' as c;
+.popular-section{
+    @include m.container;
+    h1{
+        margin: 15rem auto;
+        font-size: 5rem;
+        line-height: 1.2;
+        color: c.$primary-color;
+    }
+    .wrapper-lists{
+        display: flex;
+        justify-content: space-between;
+        span{
+            height: inherit;
+            border-left: 1px solid c.$tertiary-color;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../colors/colors' as c;
+.nft-card{
+    width: 36rem;
+    .title-and-arrow{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        .nft-title{
+            font-size: 3rem;
+            color: c.$primary-color;
+        }
+    }
+    .artist-and-value{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        margin-bottom: 2.6rem;
+        .nft-artist{           
+            color: c.$tertiary-color;
+        }
+        .nft-value{
+            color: c.$secondary-color;
+        }
+    }
+    .nft-img{
+        width: 100%;
+    }
+}
