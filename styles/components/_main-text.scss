@@ -1,0 +1,12 @@
+@use '../colors/colors' as c;
+.main-text{
+    color: c.$primary-color;
+    font-size: 1.8rem;
+    width: 400px;
+    a{
+        color: c.$primary-color;
+    }
+    p{
+        margin-bottom: 6.3rem;
+    }
+}

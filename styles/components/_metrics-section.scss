@@ -1,0 +1,25 @@
+@use '../mixins/mixin' as m;
+@use '../colors/colors' as c;
+.metrics-section{
+    border-bottom: 1px solid c.$tertiary-color;
+    .container{
+        @include m.container;
+        display: flex;
+        justify-content: space-between;   
+        .texts-and-banner{
+            padding-top: 7rem;
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+            width: 85%;
+            border-left: 1px solid c.$tertiary-color;
+            .wrapper-texts{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
