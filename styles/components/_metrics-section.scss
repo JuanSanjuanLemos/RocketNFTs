@@ -2,6 +2,8 @@
 @use '../colors/colors' as c;
 .metrics-section{
     border-bottom: 1px solid c.$tertiary-color;
+    max-width: 1500px;
+    margin: auto;
     .container{
         @include m.container;
         display: flex;

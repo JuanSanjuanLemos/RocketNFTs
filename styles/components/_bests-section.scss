@@ -13,6 +13,7 @@
     }
     .wrapper-cards{
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(auto-fill, max(330px));
         gap: 10rem;
     }

@@ -1,0 +1,13 @@
+body{
+    background-image: url("../../img/background-image.png");
+    background-repeat: no-repeat;
+	background-position: 100% 0%;
+    background-size: 80% 1000px;
+}
+
+@media (min-width:1500px) {
+    body{
+        background-size: 1300px 1000px;
+        background-position: 50% 0%;
+    }
+}
