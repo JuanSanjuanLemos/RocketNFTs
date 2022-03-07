@@ -1,0 +1,14 @@
+@use '../colors/colors' as c;
+.wrapper-metrics{
+    h2{
+        font-size: 2rem;
+        color: c.$tertiary-color;
+        line-height: 1.2;
+        p{
+            color: c.$primary-color;
+            font-weight: 600;
+            font-size: 5rem;
+            
+        }
+    }
+}
