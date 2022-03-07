@@ -1,0 +1,27 @@
+@use '../colors/colors' as c;
+@use '../mixins/mixin' as m;
+.bests-section{
+    @include m.container;
+    padding-bottom: 15rem;
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        color: c.$primary-color;
+        margin-top: 15rem;
+        margin-bottom: 12rem;
+    }
+    .wrapper-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, max(330px));
+        gap: 10rem;
+    }
+    .all-artists{
+        display: flex;
+        justify-content: center;
+        gap: 1.3rem;
+        color: c.$primary-color;
+        font-size: 2rem;
+        margin-top: 6.3rem;
+    }
+}

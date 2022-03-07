@@ -1,0 +1,26 @@
+@use '../colors/colors' as c;
+.artist-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 350px;
+    height: 150px;
+    background-color: c.$tertiary-color;
+    h2{
+        color: c.$primary-color;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+       
+    }
+    &.-best{
+        background-color: c.$secondary-color;
+        .-amount{
+            color: c.$primary-color;
+        }
+    }
+    .-amount{
+        color: c.$secondary-color;
+    }
+}

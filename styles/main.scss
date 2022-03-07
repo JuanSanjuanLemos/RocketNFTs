@@ -1,5 +1,7 @@
 @use './reset';
 @use './colors/colors';
+@use './components/artist-card';
+@use './components/bests-section';
 @use './components/gallery-section';
 @use './components/main-about';
 @use './components/main-header';
