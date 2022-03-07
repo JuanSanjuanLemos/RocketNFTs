@@ -48,4 +48,30 @@
             transition: 100ms;
         }
     }
+    .menu{
+        display: none;
+    }
+}
+
+@include m.lg{
+    .main-header{
+        nav{
+            display: none;
+        }
+        .button-conect{
+            display: none;
+        }
+        .menu{
+            display: block;
+            cursor: pointer;
+            width: 20%;
+        }
+    }
+}
+@include m.sm{
+    .main-header{
+        span,p{
+            font-size: 3rem;
+        }
+    }
 }
