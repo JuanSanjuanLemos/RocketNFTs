@@ -70,7 +70,7 @@ html {
   justify-content: center;
   margin: auto;
   gap: 4rem;
-  max-width: 350px;
+  width: 350px;
   height: 150px;
   background-color: #252525;
 }
@@ -356,22 +356,29 @@ body {
   line-height: 4.9rem;
   font-weight: 700;
 }
-.main-header nav {
-  width: 30%;
+.main-header .main-nav {
+  width: 70%;
 }
-.main-header nav ul {
+.main-header .main-nav .menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .main-nav .menu ul {
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
-.main-header nav ul li, .main-header nav ul a {
+.main-header .main-nav .menu ul li, .main-header .main-nav .menu ul a {
   text-decoration: none;
   font-size: 1.8rem;
   color: #fff;
 }
-.main-header nav ul li :hover, .main-header nav ul a :hover {
+.main-header .main-nav .menu ul li :hover, .main-header .main-nav .menu ul a :hover {
   color: #7a7a7a;
 }
-.main-header .button-conect {
+.main-header .main-nav .menu .button-conect {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,28 +387,28 @@ body {
   width: 23rem;
   height: 5rem;
 }
-.main-header .button-conect p {
+.main-header .main-nav .menu .button-conect p {
   font-size: 1.6rem;
   line-height: 2rem;
   font-weight: 700;
 }
-.main-header .button-conect:hover {
+.main-header .main-nav .menu .button-conect:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: 100ms;
 }
-.main-header .menu {
+.main-header .menu-icon {
   display: none;
 }
 
 @media (max-width: 992px) {
-  .main-header nav {
+  .main-header .main-nav {
     display: none;
   }
   .main-header .button-conect {
     display: none;
   }
-  .main-header .menu {
+  .main-header .menu-icon {
     display: block;
     cursor: pointer;
     width: 20%;
@@ -410,6 +417,24 @@ body {
 @media (max-width: 576px) {
   .main-header span, .main-header p {
     font-size: 3rem;
+  }
+}
+.main-nav.active {
+  display: flex;
+}
+.main-nav.active .menu {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .menu {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 15rem;
+    left: 0;
+    background-color: black;
   }
 }
 .main-section {

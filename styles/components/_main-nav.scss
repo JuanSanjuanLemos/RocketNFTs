@@ -1,0 +1,19 @@
+@use '../mixins/mixin' as m;
+.main-nav.active{
+    display: flex;
+    .menu{
+        display: block;
+    }
+}
+
+@include m.lg{
+    .menu{
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 15rem;
+        left: 0;
+        background-color: black;
+    }
+}
