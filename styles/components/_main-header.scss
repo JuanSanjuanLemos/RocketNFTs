@@ -7,7 +7,7 @@
     align-items: center;
     margin-top: 5.5rem;
     margin-bottom: 9rem;
-    span,p{
+    span p{
         display: inline;
         font-size: 4rem;
         line-height: 4.9rem;
@@ -15,46 +15,46 @@
     }
     .main-nav{
         width: 70%;
-        .menu{
-            width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            width: 60%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            ul{
-                width: 60%;
-                display: flex;
-                justify-content: space-between;
-                li,a{
-                    text-decoration: none;
-                    font-size: 1.8rem;
-                    color: c.$primary-color;
-                    :hover{
-                        color: #7a7a7a;
-                    }
-                }
-            }
-            .button-conect{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1.5rem;
-                border: none;
-                width: 23rem;
-                height: 5rem;
-                p{
-                    font-size: 1.6rem;
-                    line-height: 2rem;
-                    font-weight: 700;
-                }
+            li a{
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: c.$primary-color;
                 &:hover{
-                    cursor: pointer;
-                    transform: scale(1.05);
-                    transition: 100ms;
+                    color: #7a7a7a;
                 }
             }
         }
+        .button-conect{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            border: none;
+            width: 23rem;
+            height: 5rem;
+            p{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                font-weight: 700;
+            }
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: 100ms;
+            }
+        }
+        .close{
+            display: none;
+            width: 40px;
+        }
     }
-    
     .menu-icon{
         display: none;
     }
@@ -76,7 +76,7 @@
 }
 @include m.sm{
     .main-header{
-        span,p{
+        span p{
             font-size: 3rem;
         }
     }

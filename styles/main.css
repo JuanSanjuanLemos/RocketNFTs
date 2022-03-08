@@ -350,7 +350,7 @@ body {
   margin-top: 5.5rem;
   margin-bottom: 9rem;
 }
-.main-header span, .main-header p {
+.main-header span p {
   display: inline;
   font-size: 4rem;
   line-height: 4.9rem;
@@ -358,27 +358,24 @@ body {
 }
 .main-header .main-nav {
   width: 70%;
-}
-.main-header .main-nav .menu {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-header .main-nav .menu ul {
+.main-header .main-nav ul {
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
-.main-header .main-nav .menu ul li, .main-header .main-nav .menu ul a {
+.main-header .main-nav ul li a {
   text-decoration: none;
   font-size: 1.8rem;
   color: #fff;
 }
-.main-header .main-nav .menu ul li :hover, .main-header .main-nav .menu ul a :hover {
+.main-header .main-nav ul li a:hover {
   color: #7a7a7a;
 }
-.main-header .main-nav .menu .button-conect {
+.main-header .main-nav .button-conect {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,15 +384,19 @@ body {
   width: 23rem;
   height: 5rem;
 }
-.main-header .main-nav .menu .button-conect p {
+.main-header .main-nav .button-conect p {
   font-size: 1.6rem;
   line-height: 2rem;
   font-weight: 700;
 }
-.main-header .main-nav .menu .button-conect:hover {
+.main-header .main-nav .button-conect:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: 100ms;
+}
+.main-header .main-nav .close {
+  display: none;
+  width: 40px;
 }
 .main-header .menu-icon {
   display: none;
@@ -415,26 +416,42 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .main-header span, .main-header p {
+  .main-header span p {
     font-size: 3rem;
   }
 }
-.main-nav.active {
-  display: flex;
-}
-.main-nav.active .menu {
-  display: block;
-}
-
 @media (max-width: 992px) {
-  .menu {
-    display: none;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 15rem;
+  .main-nav.active {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
-    background-color: black;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    background-color: #0E0E0E;
+  }
+  .main-nav.active ul {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .main-nav.active::after {
+    content: "";
+    font-size: 5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  .main-nav.active .close {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    cursor: pointer;
   }
 }
 .main-section {

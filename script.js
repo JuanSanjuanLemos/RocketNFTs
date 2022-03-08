@@ -10,7 +10,11 @@ const menuMobile =
         <button class="button-conect">Conectar carteira</button>
     </div>`;
 
-function clickMenu(){
     let nav = document.querySelector('nav');
+function clickMenu(){
+    nav.classList.toggle('active');
+}
+
+function closeMenu(){
     nav.classList.toggle('active');
 }
