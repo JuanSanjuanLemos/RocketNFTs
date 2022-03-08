@@ -163,6 +163,12 @@ body {
   line-height: 2.2rem;
   width: 38rem;
 }
+@media (max-width: 400px) {
+  .main-about {
+    width: 28rem;
+    text-align: justify;
+  }
+}
 
 .main-footer {
   background-color: #252525;
@@ -549,6 +555,11 @@ body {
 .nft-card .nft-img {
   width: 100%;
 }
+@media (max-width: 576px) {
+  .nft-card {
+    width: 29rem;
+  }
+}
 
 .popular-section {
   width: 90%;
@@ -600,6 +611,13 @@ body {
   top: -2rem;
 }
 
+@media (max-width: 400px) {
+  .wrapper-artists {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+}
 .wrapper-avatars {
   display: block;
   position: relative;

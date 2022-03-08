@@ -1,8 +1,12 @@
 @use '../colors/colors' as c;
-
+@use '../mixins/mixin' as m;
 .main-about{
     color: c.$primary-color;
     font-size: 1.8rem;
     line-height: 2.2rem;
     width: 38rem;
+    @include m.xsm{
+        width: 28rem;
+        text-align: justify;
+    }
 }

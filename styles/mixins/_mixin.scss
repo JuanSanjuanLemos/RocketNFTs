@@ -23,3 +23,8 @@
         @content;
     }
 }
+@mixin xsm{
+    @media (max-width:400px) {
+        @content;
+    }
+}

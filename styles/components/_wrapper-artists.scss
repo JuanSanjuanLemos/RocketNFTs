@@ -1,5 +1,5 @@
 @use '../colors/colors' as c;
-
+@use '../mixins/mixin' as m;
 .wrapper-artists{
     display: flex;
     align-items: baseline;
@@ -14,5 +14,13 @@
             position: absolute;
             top: -2rem;
         }
+    }
+}
+
+@include m.xsm{
+    .wrapper-artists{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
     }
 }
