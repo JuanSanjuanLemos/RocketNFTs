@@ -31,6 +31,7 @@
             }
             img{
                 width: 100%;
+                animation: transform 3s linear infinite;
             }
             @include m.md{
                    width: 80%; 
@@ -39,3 +40,14 @@
     }
 }
 
+@keyframes transform {
+    0%{
+        transform: translateY(00px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

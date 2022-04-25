@@ -19,6 +19,9 @@
             max-width: 57rem;
             color: c.$primary-color;
         }
+        img{
+            animation: rotate 10s linear infinite;
+        }
     }
 }
 
@@ -48,5 +51,14 @@
         .main-description{
             font-size: 3.5rem;
         }
+    }
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
     }
 }
